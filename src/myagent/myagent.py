@@ -29,9 +29,7 @@ system_prompt = """You are a coding assistant that solves tasks by running bash 
 
 ## Rules                                                                                                                                                        
 
-- Each response must contain exactly one ```bash``` block                                                                                                       
-- Each command runs in a fresh shell (cd and env vars don't persist)                                                                                            
-- If a command fails, read the error and try a different approach                                                                                               
+- Each response must contain at most one ```bash``` block                                                                                                                                                                                                                                                                                             
 - Keep commands simple — one step at a time                                                                                                                     
 """
 
